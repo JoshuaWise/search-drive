@@ -1,0 +1,26 @@
+{
+  "name": "search-drive",
+  "version": "0.1.0",
+  "description": "Searches the entire computer for all files and directories that match the given name.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoshuaWise/search-drive.git"
+  },
+  "keywords": [
+    "search",
+    "recursive",
+    "computer",
+    "drive",
+    "filesystem"
+  ],
+  "author": "Joshua Wise <josh@joshuawise.ninja> (www.joshuawise.ninja)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JoshuaWise/search-drive/issues"
+  },
+  "homepage": "https://github.com/JoshuaWise/search-drive#readme"
+}
