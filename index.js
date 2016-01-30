@@ -3,7 +3,6 @@ module.exports = function (searchTerm, cb) {
 	var readdir = require('fs').readdir;
 	var lstat = require('fs').lstat;
 	var joinPath = require('path').join;
-	var root = require('./lib/root')();
 	var device = 0;
 	var matches = [];
 	var pendings = 0;
@@ -33,12 +32,12 @@ module.exports = function (searchTerm, cb) {
 			--pendings || cb(null, matches);
 		});
 	}
-	require('fs').stat(root, function (err, stats) {
+	require('./lib/root')(function (err, rootInfo) {
 		if (err) {
 			cb(err);
 		} else {
-			device = stats.dev;
-			searchFolder(root);
+			device = rootInfo.device;
+			searchFolder(rootInfo.root);
 		}
 	});
 };
