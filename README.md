@@ -13,4 +13,4 @@ search('.git', function (err, matches) {
 ```
 
 ## Limitations
-`search-drive` only looks within the filesystem device of the processes' **current working directory**. Do not change the current working directory after you invoke this function, before the callback is invoked.
+`search-drive` only looks within the **filesystem device** of the processes' current working directory. Do not change the current working directory after you invoke this function, before the callback is invoked.
